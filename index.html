@@ -4,108 +4,215 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo</title>
-  
+
     <style>
       body {
-  background-image: linear-gradient(
-    to left top,
-    #8387f7,
-    #5059df,
-    #4f4ea0,
-    #204168,
-    #12213d,
-    #0b0a1b,
-    #000000,
-    #000000,
-    #1f081f,
-    #68215d,
-    #973aa0,
-    #ca82f1
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
+        background-image: linear-gradient(
+          to left top,
+          #8387f7,
+          #5059df,
+          #4f4ea0,
+          #204168,
+          #12213d,
+          #0b0a1b,
+          #000000,
+          #000000,
+          #1f081f,
+          #68215d,
+          #973aa0,
+          #ca82f1
+        );
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+      }
 
-* {
-  /* reset  */
-  padding: 0;
-  margin: 0;
-}
+      * {
+        padding: 0;
+        margin: 0;
+      }
 
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-a,
-i {
-  color: rgb(255, 255, 255);
-  font-family: "Segoe UI";
-  padding: 8px;
-  flex-wrap: wrap;
-}
+      .foto {
+        border: 3px solid #fff;
+      }
 
-.cardDiv {
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  margin: 30px;
-  padding: 30px;
-  flex-wrap: wrap;
-}
+      h1,
+      h2,
+      h3,
+      p,
+      ul,
+      li,
+      a,
+      i {
+        color: rgb(255, 255, 255);
+        font-family: "Segoe UI";
+        padding: 8px;
+        flex-wrap: wrap;
+        transition-duration: 0.4s;
+      }
 
-button {
-  color: rgb(255, 255, 255);
-  background-color: #00000000;
-  border: 2px solid #ffffff;
-  border-radius: 15px;
-  padding: 10px;
-  margin-bottom: 20px;
-  width: 100%;
-  text-align: left;
-  justify-content: space-between;
-  display: flex;
-  transition-duration: 0.4s;
-}
+      .cardDiv {
+        border: 2px solid #ffffff;
+        border-radius: 25px;
+        margin: 30px;
+        padding: 30px;
+        flex-wrap: wrap;
+      }
 
-button:hover {
-  border: 2px solid #00a2ff;
-  h2 {
-    color: rgb(0,162,255);
-  }
-  i {
-    color: rgb(0,162,255);
-  }
-}
+      button {
+        color: rgb(255, 255, 255);
+        background-color: #00000000;
+        border: 2px solid #ffffff;
+        border-radius: 15px;
+        padding: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: left;
+        justify-content: space-between;
+        display: flex;
+        transition-duration: 0.4s;
+      }
 
-.logo
-{
-width: 50px;
-height: 50px;
-margin: 10px;
-}
+      button:hover {
+        border: 2px solid #00a2ff;
+        h2 {
+          color: rgb(0, 162, 255);
+        }
+        i {
+          color: rgb(0, 162, 255);
+        }
+      }
 
-a:link {
-  color: rgb(252, 252, 252);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: underline;
-}
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+      }
+
+      a:link {
+        color: rgb(252, 252, 252);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      html {
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      a,
+      p,
+      h1,
+      h2,
+      h3 {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      button h2 {
+        flex: 1;
+        min-width: 0;
+      }
+      button i.fa-sort-down {
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          background-attachment: scroll;
+          background-size: cover;
+        }
+
+        .cardDiv {
+          margin: 12px;
+          padding: 16px;
+          border-radius: 18px;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1.15rem;
+        }
+        h3 {
+          font-size: 1rem;
+        }
+        p,
+        li,
+        a {
+          font-size: 0.95rem;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li,
+        a,
+        i {
+          padding: 6px;
+        }
+
+        button {
+          padding: 8px;
+          border-radius: 12px;
+          margin-bottom: 14px;
+        }
+
+        .logo {
+          width: 40px;
+          height: 40px;
+          margin: 6px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .cardDiv {
+          margin: 8px;
+          padding: 12px;
+          border-radius: 14px;
+        }
+
+        h1 {
+          font-size: 1.3rem;
+        }
+
+        img[src$="foto.png"] {
+          width: 120px;
+          height: 120px;
+        }
+
+        .logo {
+          width: 36px;
+          height: 36px;
+          margin: 4px;
+        }
+      }
     </style>
     <link
       rel="stylesheet"
@@ -117,7 +224,7 @@ a:active {
       <div class="cardDiv">
         <div style="text-align: center">
           <img
-            border:= "150px solid #ffffff"
+            class="foto"
             src="assets/foto.png"
             width="150px"
             height="150px"
@@ -129,12 +236,12 @@ a:active {
           <p><i class="fa fa-map-marker"></i> Leopoldina - Porto Alegre/RS</p>
           <p><i class="fa fa-phone"></i>(51) 99760-7506</p>
           <p><i class="fa fa-envelope"></i> heitordossantossoares@gmail.com</p>
-          <p>
+          <p></p>
           <p></p>
         </div>
 
         <div>
-          <button onclick="ExibirDados4()" id="BotaoExibir4">
+          <button onclick="ExibirDados(4)" id="BotaoExibir4">
             <h2>Formação Acadêmica</h2>
             <i
               id="sortDown4"
@@ -147,14 +254,16 @@ a:active {
               <p>● Escola Técnica José César de Mesquita</p>
               <p>(Concluído em: 04/2026)</p>
               <h3>Ensino Médio</h3>
-              <p>● Escola Estadual de Ensino Médio Baltazar de Oliveira Garcia</p>
+              <p>
+                ● Escola Estadual de Ensino Médio Baltazar de Oliveira Garcia
+              </p>
               <p>(Concluído em: 12/2023)</p>
             </div>
           </button>
         </div>
 
         <div>
-          <button onclick="ExibirDados3()" id="BotaoExibir3">
+          <button onclick="ExibirDados(3)" id="BotaoExibir3">
             <h2>Idioma</h2>
             <i
               id="sortDown3"
@@ -169,7 +278,7 @@ a:active {
         </div>
 
         <div>
-          <button onclick="ExibirDados1()" id="BotaoExibir1">
+          <button onclick="ExibirDados(1)" id="BotaoExibir1">
             <h2>Ferramentas</h2>
             <i
               id="sortDown1"
@@ -178,13 +287,7 @@ a:active {
             ></i>
             <div id="exibir1" style="display: none">
               <h3>● C, Java, Docker, HTML+CSS+JavaScript e MySQL</h3>
-              <div
-                style="
-                  display: flex;
-                  flex-wrap: wrap;
-                  border-radius: 8px;
-                "
-              >
+              <div style="display: flex; flex-wrap: wrap; border-radius: 8px">
                 <img src="assets/C.png" class="logo" />
                 <img src="assets/Java.png" class="logo" />
                 <img src="assets/docker.png" class="logo" />
@@ -198,7 +301,7 @@ a:active {
         </div>
 
         <div>
-          <button onclick="ExibirDados2()" id="BotaoExibir2">
+          <button onclick="ExibirDados(2)" id="BotaoExibir2">
             <h2>Portfólio</h2>
             <i
               id="sortDown2"
@@ -208,36 +311,27 @@ a:active {
 
             <div id="exibir2" style="display: none">
               <div>
-                <h3>
-                 ● Flappy Bird recriado em Flutter
-                </h3>
+                <h3>● Flappy Bird recriado em Flutter</h3>
                 <a
                   href="https://github.com/HeitorSoares54/projeto-mobile-grupo1"
                   >https://github.com/HeitorSoares54/projeto-mobile-grupo1</a
                 >
               </div>
               <div>
-                <h3>
-                 ● IaC - Infraestrutura na Azure
-                </h3>
+                <h3>● IaC - Infraestrutura na Azure</h3>
                 <a
                   href="https://github.com/HeitorSoares54/iac-trabalho-terraform-ansible"
                   >https://github.com/HeitorSoares54/iac-trabalho-terraform-ansible</a
                 >
               </div>
               <div>
-                <h3>
-                 ● Unity - Jogo 3D em Terceira
-                  Pessoa
-                </h3>
+                <h3>● Unity - Jogo 3D em Terceira Pessoa</h3>
                 <a href="https://github.com/HeitorSoares54/Jogo3dTerceiraPessoa"
                   >https://github.com/HeitorSoares54/Jogo3dTerceiraPessoa</a
                 >
               </div>
-               <div>
-                <h3>
-                 ● Banco de dados (Escola) - MySQL e Spring Boot
-                </h3>
+              <div>
+                <h3>● Banco de dados (Escola) - MySQL e Spring Boot</h3>
                 <a href="https://github.com/HeitorSoares54/escola_spring_boot"
                   >https://github.com/HeitorSoares54/escola_spring_boot</a
                 >
@@ -247,7 +341,7 @@ a:active {
         </div>
 
         <div>
-          <button onclick="ExibirDados5()" id="BotaoExibir5">
+          <button onclick="ExibirDados(5)" id="BotaoExibir5">
             <h2>Curso</h2>
             <i
               id="sortDown5"
@@ -256,7 +350,10 @@ a:active {
             ></i>
 
             <div id="exibir5" style="display: none">
-              <h3>● Jogos 3D na Unity com C# - Do Zero ao Avançado + Multiplayer (85h) </h3>
+              <h3>
+                ● Jogos 3D na Unity com C# - Do Zero ao Avançado + Multiplayer
+                (85h)
+              </h3>
               <p>2026 - Em Andamento</p>
             </div>
           </button>
@@ -264,80 +361,17 @@ a:active {
       </div>
     </section>
     <script>
-      let toggle1 = 0;
-function ExibirDados1() {
-  if (toggle1 == 1) {
-    document.getElementById("exibir1").style.display = "none";
-    document.getElementById("sortDown1").style.display = "block";
-    document.getElementById("BotaoExibir1").style.display = "flex";
-    toggle1 = 0;
-  } else if (toggle1 == 0) {
-    document.getElementById("exibir1").style.display = "grid";
-    document.getElementById("sortDown1").style.display = "none";
-    document.getElementById("BotaoExibir1").style.display = "block";
-    toggle1 = 1;
-  }
-}
+      function ExibirDados(n) {
+        const botao = document.getElementById("BotaoExibir" + n);
+        const conteudo = document.getElementById("exibir" + n);
+        const seta = document.getElementById("sortDown" + n);
 
-let toggle2 = 0;
-function ExibirDados2() {
-  if (toggle2 == 1) {
-    document.getElementById("exibir2").style.display = "none";
-    document.getElementById("sortDown2").style.display = "block";
-    document.getElementById("BotaoExibir2").style.display = "flex";
-    toggle2 = 0;
-  } else if (toggle2 == 0) {
-    document.getElementById("exibir2").style.display = "grid";
-    document.getElementById("sortDown2").style.display = "none";
-    document.getElementById("BotaoExibir2").style.display = "block";
-    toggle2 = 1;
-  }
-}
+        const aberto = conteudo.style.display === "grid";
 
-let toggle3 = 0;
-function ExibirDados3() {
-  if (toggle3 == 1) {
-    document.getElementById("exibir3").style.display = "none";
-    document.getElementById("sortDown3").style.display = "block";
-    document.getElementById("BotaoExibir3").style.display = "flex";
-    toggle3 = 0;
-  } else if (toggle3 == 0) {
-    document.getElementById("exibir3").style.display = "grid";
-    document.getElementById("sortDown3").style.display = "none";
-    document.getElementById("BotaoExibir3").style.display = "block";
-    toggle3 = 1;
-  }
-}
-
-let toggle4 = 0;
-function ExibirDados4() {
-  if (toggle4 == 1) {
-    document.getElementById("exibir4").style.display = "none";
-    document.getElementById("sortDown4").style.display = "block";
-    document.getElementById("BotaoExibir4").style.display = "flex";
-    toggle4 = 0;
-  } else if (toggle4 == 0) {
-    document.getElementById("exibir4").style.display = "grid";
-    document.getElementById("sortDown4").style.display = "none";
-    document.getElementById("BotaoExibir4").style.display = "block";
-    toggle4 = 1;
-  }
-}
-
-let toggle5 = 0;
-function ExibirDados5() {
-  if (toggle5 == 1) {
-    document.getElementById("exibir5").style.display = "none";
-    document.getElementById("sortDown5").style.display = "block";
-    document.getElementById("BotaoExibir5").style.display = "flex";
-    toggle5 = 0;
-  } else if (toggle5 == 0) {
-    document.getElementById("exibir5").style.display = "grid";
-    document.getElementById("sortDown5").style.display = "none";
-    document.getElementById("BotaoExibir5").style.display = "block";
-    toggle5 = 1;
-  }
-}
+        conteudo.style.display = aberto ? "none" : "grid";
+        seta.style.display = aberto ? "block" : "none";
+        botao.style.display = aberto ? "flex" : "block";
+      }
     </script>
   </body>
 </html>
